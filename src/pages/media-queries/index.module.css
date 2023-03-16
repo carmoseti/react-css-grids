@@ -1,0 +1,47 @@
+.body {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "nav article ads"
+            "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+@media all and (max-width: 575px) {
+    .body {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "header"
+            "article"
+            "ads"
+            "footer";
+        grid-template-rows: 60px 80px 1fr 60px 80px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.body > header, .body > footer, .body > article, .body > nav, .body > div {
+    padding: 1.2em;
+    background: gold;
+}
+.pageHeader {
+    grid-area: header;
+}
+.pageFooter {
+    grid-area: footer;
+}
+.mainArticle {
+    grid-area: article;
+}
+.mainNav {
+    grid-area: nav;
+}
+.siteAds {
+    grid-area: ads;
+}

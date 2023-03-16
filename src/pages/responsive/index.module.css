@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-gap: 2vw;
+    margin: 10px;
+    border: solid 1px #000000;
+}
+
+.grid > div {
+    font-size: 5vw;
+    padding: 0.5em;
+    background: gold;
+    text-align: center;
+}
+
+.grid-autofill {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.grid-autofit {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

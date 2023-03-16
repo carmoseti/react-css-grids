@@ -1,0 +1,37 @@
+.body {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "nav article ads"
+            "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+.body > header, .body > footer, .body > article, .body > nav, .body > div {
+    padding: 20px;
+    background: gold;
+}
+
+.pageHeader {
+    grid-area: header;
+}
+
+.mainNav {
+    grid-area: nav;
+}
+
+.mainArticle {
+    grid-area: article;
+}
+
+.siteAds {
+    grid-area: ads;
+}
+
+.pageFooter {
+    grid-area: footer;
+}
