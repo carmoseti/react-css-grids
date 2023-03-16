@@ -24,6 +24,15 @@ const HomePage: FunctionComponent<Props> = (props) => {
                 <li>
                     <Link to={`/media-queries`}>Media Queries</Link>
                 </li>
+                <li>
+                    <Link to={`/explicit-implicit-grids`}>Explicit Implicit Grids</Link>
+                </li>
+                <li>
+                    <Link to={`/grid-item-placement`}>Grid Item Placement</Link>
+                </li>
+                <li>
+                    <Link to={`/form-layout-placement`}>Form Layout Placement</Link>
+                </li>
             </ol>
         </React.Fragment>
     );

@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-rows:[row1-start] 50px [row2-start] 1fr [row3-start] 80px [row3-end];
+    grid-template-columns:[col1-start] 120px [col2-start] 1fr [col3-start] 80px [col3-end];
+    grid-gap: 5px;
+    height: 75vh;
+}
+.grid > div {
+    background-color: #66CC00;
+    padding: 16px;
+}
+.item1 {
+    /*grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;*/
+    grid-row-start: row1-start;
+    grid-column-start: col1-start;
+    grid-row-end: row2-start;
+    grid-column-end: col2-start;
+}
+.item2 {
+    /*grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 4;*/
+    grid-row-start: row3-start;
+    grid-column-start: col2-start;
+    grid-row-end: row3-end;
+    grid-column-end: col3-end;
+}
+.item3 {
+    /*grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;*/
+    grid-row-start: row2-start;
+    grid-column-start: col2-start;
+    grid-row-end: row3-start;
+    grid-column-end: col3-start;
+}
