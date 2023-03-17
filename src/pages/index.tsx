@@ -33,6 +33,12 @@ const HomePage: FunctionComponent<Props> = (props) => {
                 <li>
                     <Link to={`/form-layout-placement`}>Form Layout Placement</Link>
                 </li>
+                <li>
+                    <Link to={`/grid-alignment`}>Grid Alignment</Link>
+                </li>
+                <li>
+                    <Link to={`/layering-grid-items`}>Layering Grid Items</Link>
+                </li>
             </ol>
         </React.Fragment>
     );

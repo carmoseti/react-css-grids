@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
+.grid > div {
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 4vw;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: mediumseagreen;
+    position: relative;
+    left: -20vw;
+    top: 8vh;
+}
+
+.blue {
+    background-color: steelblue;
+    position: relative;
+    left: -40vw;
+    top: 4vh;
+}
